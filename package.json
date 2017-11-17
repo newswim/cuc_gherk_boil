@@ -1,0 +1,27 @@
+{
+  "name": "doover",
+  "version": "1.0.0",
+  "description": "When you can't even, do over.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newswim/cuc_gherk_boil.git"
+  },
+  "keywords": [
+    "Cucumber",
+    "Gherkin",
+    "BDD",
+    "TDD",
+    "Node",
+    "React"
+  ],
+  "author": "Dan Minshew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newswim/cuc_gherk_boil/issues"
+  },
+  "homepage": "https://github.com/newswim/cuc_gherk_boil#readme"
+}
