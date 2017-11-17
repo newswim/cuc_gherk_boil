@@ -4,6 +4,7 @@
 Imagine a future with me...
 
 Your project is fully defined, requests from a client are clear..
+```
 .. these requirements need to be transcribed into a first-person perspective --- the person using your app.
 ... you break out behaviors into descriptive chunks
 ... you use **Gherkin** syntax, because _convention over configuration_ is ***GOOD***
@@ -15,6 +16,7 @@ Your project is fully defined, requests from a client are clear..
 ... you update the tests. They break!
 ... you change the code --- they pass!
 ... Client is happy, you're done!
+```
 
 ### Suggested Stack
 
