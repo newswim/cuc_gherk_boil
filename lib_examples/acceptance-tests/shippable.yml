@@ -1,0 +1,68 @@
+# Language setting
+language: node_js
+
+# Version number
+node_js:
+  - 6.10.2
+
+rvm:
+  - 2.3.3
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    # KONTENA_MASTER_IP
+    - secure: nobgy3lWnB/rszH/vt+xpleF8dTswjfyjPTRlT9E1M1Ubg15LN5ZRmid2V5KFr/njFImYC8Tfe8Hb+XrZlRI6wE1pxqiabBcJ22LGUGwzTqK1ofQTW7nxQ8BgS6n133RUriQ5v4xBcXBEVDv2jL/Y8apcDgmIm7uUI4/QA3KMzk2A79eZdwyvOIfQelUwatxhpUbsXb0SmCcW4Q//Tm0LvDcLxpxXaoN64tYfUEd1/UrQtZvL+lOM6hSQX5mt7YhQKUuHLw7FJ44aEABkYcEgr+WoR+3mIJY0I/JuDPXb187PKlz2eCs1if4mJKfuGHLqLoOKlQFJP1AeeOJPu24uw==
+    # KONTENA_LOGIN_TOKEN
+    - secure: FnIYGmfZVB5z58vVT6y97O3Z0mABHXdE1WIEUOQM0BR5ChaJhazgBqStQKUtEQRZcEP+0NrueMsJ9z0DL/104HrOeBufZAZWw/19FLnav+d9lYnASVDPhSNE1ol97HOGflhEp7KcLMTyn5kXgSP8ofCGfDyajpt+OKboV8jl/1gJdqIL6rRQXT/jDnaYHXSPoDQggiaHfHdNnGHNDbGoON9EZfEXQ2mOH/PRfiT4fE8mfTUmTKCqCQ7DASC7C1yYgT73B4ACVmqMLtuEQgQriV3FdY1tTpCHKZtBLwv9qxi2/8VuAmwM4nToQHei3BjWwlfHNUkCsSg+kPYnXuURJA==
+    # KONTENA_GRID
+    - secure: cOZi6xvLthLA4gewayHHHHIdm10Q78j2yhSYavdWQurElPtExwUNfY6xpe9A7Rd35uBfEwBheWog13Z6FVyLPwf8AjrKcyIikfbUqSmoHpJKUpfjfgBmTsGZ8bxAp1HUGvj+gSww4kLsUznqDkpIlJdDo2K4pOznV1rKAx8fb/wCz+VXkGVJUhlPwv74f++p2ag/tzXZYgIO8h54gbhAbcopZjKcliHmNxlLdcL/F11BrjkY1xQZAAvywP2rJG8e3xdZBynvOlAAJe58HwuSUioXmbXUW3Ckf6E+OwY2DQidAthGzXmQYeR1pSqmq7Ege1coEtFdkFfvXKmxkDjooQ==
+    # TARGET_HOST
+    - secure: BnJZW4Wa6cSZW7wbzRqKQNV3SrNLhWlXl/SBG7UitlGO9EkHfnQItRkmZcg8P2/8Eli6pLDJLRhBMjaANt8JzB5nBocvqVP2M3imxPGaXeHCmDxAJK5CCXkSQg63G6xIqDLeGT7Inu+ucx+D+pH5R6apxwIHkW2qEm4MuXSrCSoxOvjzwU6MnT1HLpge/W+PLFG6IXEDByJylQa4vv0z+jc3/NZYOGNeo4amHdhoN+q55aoidcjTZwiRVP9hQyJ6NZDV38b9LwqvzusnAtXbOtqGPIL6m5o60Hpb5dw+Ejb03O07uft86WHtn1WNKpM5lb0AwE2rCHE/xNTTj+h3uw==
+    # BASIC_AUTH_USER
+    - secure: K/CEqYURbUX7wzjacCJcev3bqWQGtJpAHtFiZ7cj27syraTOHOEb/rmNplCgLc0goNky0XROugKQYuOR2gbF/VPolaww7doSdfIOl8Y8M/jjvuZjhj71/uSABCZ2NOl1MP8MsnaO7VZoZqQ6wHP2pBTnV7ZJDgT23PbVZ0nZL7OgWmm+IDrS57RpUS0XVZurKITmJzot91t7IKHcfmfWgHuw7STpffnmv0YgBVI0Q6vTz9k9SPOX1t1I63BDzAud7KEGqzoHALI+xXIf135B5XibM8JinE3rDKTJsRxzkGI8Fa1Fu+j+6RmX6HDB0XRnHz93h0umiG+o5TuHNHIHtg==
+    # BASIC_AUTH_PASSWORD
+    - secure: GbbOX+54Kc31uqzFIkLze1xC0WZuHbZRD6ptUB1YXqOFINcEsnsTf5TlfetUJpjxjEzWXpk5PwUqj31PZoliGYbYQo1wRJ4kBHZef001F17lMYcKUNv53rtn4lpWVL+OQUPeNToXlGKBei9AH0u2rLV5mC8pfx3O6i51cGWHzbw75wswmRwxUKuQRyNDNlrxEEK4U2K/3UxEy3NjdmSU5LPP4Y9Ft1izCyqQp5+tCP8WWMsgG+lz8P42PtOYEoN1UK8FdUy+keJGD+iJ6qH1OUifKq6miwYWa0EkjGDko1QnfURq+0Ca7a7GKHCVEAaVlSrqLfet6i3G/5O3OiHT2A==
+
+build:
+  ci:
+    - npm install npm@4.5.0 -g
+    - npm install --no-optional --loglevel warn
+
+    - source /usr/local/rvm/scripts/rvm
+    - ruby -v
+
+    - git clone git@gitlab.com:article-projects/deployment-scripts.git
+    - cd deployment-scripts && ./scripts/kontena-install.sh
+    - ./scripts/kontena-login.sh
+
+    - export KONTENA_FRONT_SERVICE_VERSION=$FRONTIMAGERESOURCE_VERSIONNAME
+    - echo $KONTENA_FRONT_SERVICE_VERSION
+    - export KONTENA_APP_SERVICE_VERSION=$APPIMAGERESOURCE_VERSIONNAME
+    - echo $KONTENA_APP_SERVICE_VERSION
+    - export KONTENA_AUTH_SERVICE_VERSION=$AUTHIMAGERESOURCE_VERSIONNAME
+    - echo $KONTENA_AUTH_SERVICE_VERSION
+    - ./scripts/kontena-ci-area-deploy.sh
+
+    - echo $TARGET_HOST
+    - xvfb-run npm test
+
+  on_success:
+    - echo "versionName=$KONTENA_FRONT_SERVICE_VERSION" >> $JOB_STATE/verified-front-image-resource.env
+    - echo "versionName=$KONTENA_APP_SERVICE_VERSION" >> $JOB_STATE/verified-app-image-resource.env
+    - echo "versionName=$KONTENA_AUTH_SERVICE_VERSION" >> $JOB_STATE/verified-auth-image-resource.env
+
+integrations:
+  key:
+    - integrationName: KontenaKeyIntegration
+      type: pem-key
+
+  notifications:
+    - integrationName: email
+      type: email
+      on_success: never
+      on_failure: never
+      on_pull_request: never

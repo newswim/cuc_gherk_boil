@@ -22,3 +22,27 @@ Imagine a future with me...
 - CucumberJS (because you're writing JavaScript anyway...)
 - A driver... dunno yet! Probably WebDriver or Nightmare.
 
+
+### Additional
+
+- https://github.com/stewartml/gherkin-jest
+- [writing features - gherkin language] (behat)
+- [Speak Gherkin And Learn How To Collect Requirements For Your Project]
+
+| Library              | Pro                                         | Con                 |
+| :------------------- | :------------------------------------------ | :------------------ |
+| Nightwatch-Cucumber  | fairly simple behavior api (via nightwatch) | writing steps       |
+| Cucumber-Mink        | eliminates need to write 40 common steps    | lacks driver        |
+| react-cucumber       | integrates with Jest                        | writing steps       |
+| iensu/mocha-cakes-2  |      |             |
+
+
+
+[writing features - gherkin language]: 'http://docs.behat.org/en/v2.5/guides/1.gherkin.html'
+[Speak Gherkin And Learn How To Collect Requirements For Your Project]: 'https://medium.com/@NeotericEU/speak-gherkin-and-learn-how-to-collect-requirements-for-your-project-dad171da8fb'
+
+
+
+
+
+
